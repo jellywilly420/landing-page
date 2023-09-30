@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/***************/
+/*General Rules*/
+/***************/
+/** {
+	border: 2px solid peachpuff;
+}*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, sans-serif;
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+.button a {
+	font-size: 3vw;	/*Sizing*/
+	color: #E5E7EB;
+	cursor: default;
+	background-color: #3882F6;
+	padding: .5vw 2vh;		/*Sizing*/
+	border-radius: 5px;		/*Sizing*/
+	text-decoration: none;
+}
+
+/*****************************/
+/*Header Styles & Hero Styles*/
+/*****************************/
+.hero {
+	background-color: #1F2937;
+	display: flex;
+	flex-direction: column;
+	gap: 5vw;	/*Sizing*/
+	padding: 3vw;	/*Sizing*/
+}
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+}
+.links {
+	display: flex;
+	align-content: center;
+}
+.logo {
+	color: #F9FAf8;
+}
+.logo h1 {
+	font-size: 6vw;  /*Sizing*/
+	margin: auto 0;
+}
+ul {
+	display: flex;
+	flex-direction: row;
+	gap: 2vmin;	/*Sizing*/
+	align-content: center;
+	justify-content: space-between;
+}
+li {
+	list-style: none;
+	font-size: 3vmin;	/*Sizing*/
+	margin: auto 0;
+}
+.header a {
+	text-decoration: none;
+	color: #E5E7EB;
+}
+
+/***************/
+/*Banner Styles*/
+/***************/
+.banner {
+	width: 90%;
+	margin: 0 auto;
+}
+.banner ,.banner .text-and-button {
+	display: flex;
+	flex-direction: column;
+	gap: 7vw;	/*Sizing*/
+}
+.banner h2 {
+	font-weight: bolder;
+	color: #F9FAf8;
+	font-size: 6vw;	/*Sizing*/
+	margin: 3vw 0;
+}
+.banner p {
+	font-size: 3.5vmin;
+	color: #E5E7EB;
+	display: flex;
+	align-content: center;
+}
+.banner .img {
+	margin: 0 auto;
+	width: 60vw;	/*Sizing*/
+	height: 45vw;	/*Sizing*/
+}
+
+
+/*************/
+/*Info Styles*/
+/*************/
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-content: center;
+	gap: 5vw;	/*Sizing*/
+	padding: 2vw;	/*Sizing*/
+}
+.info h2 {
+	margin: auto;
+}
+.info .card .img {
+	width: 75%;	/*Sizing*/
+	height: auto;
+	margin: 0 auto;
+}
+.card img {
+	border: solid 1vw #3882F6;
+	border-radius: 10%;
+}
+.card h3 {
+	text-align: center;
+}
+.info .cards {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.info .card {
+	width: 40%;	/*Sizing*/
+	display: flex;
+	flex-direction: column;
+	gap: 2.5vw;	/*Sizing*/
+}
+.card.mobile-upper {
+	margin-bottom: 4vw;	/*Sizing*/
+}
+
+/**************/
+/*Quote Styles*/
+/**************/
+.quote {
+	background-color: #E5E7EB;
+	display: flex;
+	flex-direction: column;
+	padding: 7vw 10vw;	/*Sizing*/
+	gap: 1.3vw;	/*Sizing*/
+}
+.quote .text {
+	text-align: justify;
+	font-size: 5vw;	/*Sizing*/
+	font-weight: lighter;
+	font-style: italic;
+	font-stretch: initial;
+	color: #1F2937;
+}
+.quote .sayer {
+	margin-left: auto;
+	color: #1F2937;
+	font-size: 3.5vw;	/*Sizing*/
+}
+
+/***************/
+/*C.T.A. Styles*/
+/***************/
+.call-to-action {
+	background-color: #3882F6;
+	border-radius: 10px;	/*Sizing*/
+	padding: 5vw;	/*Sizing*/
+	width: 70%;	/*Sizing*/
+	margin: 10vw auto;	/*Sizing*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-content: center;
+
+}
+.call-to-action .text {
+	color: #E5E7EB;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5vw;	/*Sizing*/
+	font-weight: lighter;
+}
+.call-to-action .text h2 {
+	font-size: 3vw;	/*Sizing*/
+}
+.call-to-action .button {
+	margin: auto;
+}
+.call-to-action .button a {
+	border: .5vw solid #E5E7EB;
+}
