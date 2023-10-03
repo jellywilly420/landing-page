@@ -82,7 +82,7 @@ body {
 /*Info Styles*/
 /*************/
 .info {
-	margin: 2rem .5rem;
+	margin: 2rem auto;
 	text-align: center;
 }
 .info h2 {
@@ -110,7 +110,7 @@ body {
 }
 .card img {
 	width: 100%;
-	height: auto;
+	height: 51%;
 	border-bottom: .5px solid #3882F6;
 	border-radius: 5px 5px 0 0;
 }
@@ -125,10 +125,11 @@ body {
 /**************/
 .quote {
 	background-color: #E5E7EB;
+	padding: 3rem 2rem;
 }
 .quote p.saying {
 	text-align: justify;
-	padding: 1rem 2.5rem .5rem;
+	padding-bottom: 1rem;
 	color: #1F2937;
 	font-size: 1.15rem;
 	font-style: italic;
@@ -138,7 +139,6 @@ body {
 	color: #1F2937;
 	font-size: 1rem;
 	text-align: right;
-	padding: .5rem 2.5rem 1rem;
 }
 
 /***************/
@@ -175,4 +175,130 @@ body {
 }
 .footer p, a {
 	color: #E5E7EB;
+}
+
+
+@media only screen and (min-width: 900px) {
+.button {
+	width: 7rem;
+	padding: .8rem 1.9rem;
+	font-size: 1.6rem;
+}
+
+/*****************************/
+/*Header Styles & Hero Styles*/
+/*****************************/
+.header li {
+	font-size: 1.15rem;
+}
+div.header {
+	padding: .7rem 2rem;
+}
+.header ul {
+	gap: 1.5rem;
+}
+.hero > * {
+	margin: 0;
+	padding: 0;
+}
+
+/***************/
+/*Banner Styles*/
+/***************/
+.banner {
+	width: 80%;
+	margin: 2.5rem auto;
+	display: flex;
+	flex-direction: row-reverse;
+	gap: 1rem;
+	justify-content: center;
+	align-items: fill;
+}
+.banner img, .banner .text-and-button {
+	width: 50%;
+}
+.banner  p, .banner  h2 {
+	text-align: start;
+}
+.banner h2 {
+	font-size: 3rem;
+}
+.banner p {
+	font-size: 1.5rem;
+}
+
+.banner .text-and-button {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+/*************/
+/*Info Styles*/
+/*************/
+.info {
+	margin: 2.5rem auto;
+}
+.info h2 {
+	margin-bottom: 1.5rem;
+	font-size: 2rem;
+}
+.info .card {
+	min-width: 120px;
+	max-width: 160px;
+	border-bottom: 1.5px solid #3882F6;
+	border-radius: 11px;
+}
+.card img {
+	border-bottom: 1.5px solid #3882F6;
+	border-radius: 10px 10px 0 0;
+}
+.card p {
+	font-size: 1.125rem;
+	padding: .5rem;;
+}
+
+/**************/
+/*Quote Styles*/
+/**************/
+.quote {
+	padding: 4rem 15rem 3.5rem ;
+}
+.quote p.saying {
+	padding-bottom: 2rem;
+	font-size: 1.4rem;
+}
+.quote p.sayer {
+	font-size: 1.2rem;
+}
+
+/***************/
+/*C.T.A. Styles*/
+/***************/
+.call-to-action {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	gap: 3rem;
+	padding: 3rem 9rem;
+	margin: 3.5rem 7rem;
+}
+.call-to-action p, .call-to-action h3 {
+	text-align: start;
+}
+.call-to-action h3 {
+	font-size: 1.6rem;
+	margin-bottom: .5rem;
+}
+.call-to-action p {
+	font-size: 1.1rem;
+}
+.call-to-action .button {
+	border: 1px solid #F9FAF8;
+	margin: 0;
+	padding: 1rem 4rem;
+	font-size: 2rem;
+}
+
 }
