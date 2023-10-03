@@ -2,9 +2,6 @@
 /***************/
 /*General Rules*/
 /***************/
-/* * {
-	border: 2px solid peachpuff;
-} */
 * {
 	padding: 0;
 	margin: 0;
@@ -71,60 +68,111 @@ body {
 .button {
 	width: 5rem;
 	display: block;
-	margin: .5rem auto;
-	padding: .25rem .5rem;
-	border: 1px solid #F9FAF8;
+	margin: 1rem auto;
+	padding: .5rem 1.5rem;
 	border-radius: 7px;
 	background-color: #3882F6;
 	color: #F9FAF8;
 	text-decoration: none;
 	cursor: default;
+	font-size: 1.4rem;
 }
 
 /*************/
 /*Info Styles*/
 /*************/
 .info {
-	margin: 1rem auto;
+	margin: 2rem .5rem;
 	text-align: center;
 }
 .info h2 {
 	color: #1F2937;
-	margin-bottom: .5rem;
+	margin-bottom: 1rem;
 }
 .info .cards {
-	margin: auto .2rem;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
+	gap: 1.5rem;
+}
+.info .cards .row {
+	gap: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .info .card {
-	width: 48%;
-	min-width: 135px;
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
+	min-width: 70px;
+	max-width: 110px;
 	border: .5px solid #3882F6;
 	border-radius: 5px;
-	margin: .125rem;
 }
 .card img {
-	border-radius: 5px;
-	max-width: 55%;
-	height: 100%;
+	width: 100%;
+	height: auto;
+	border-bottom: .5px solid #3882F6;
+	border-radius: 5px 5px 0 0;
 }
 .card p {
-	font-size: .8rem;
-	margin: .125rem;
+	font-size: .9rem;
+	padding: .125rem;;
 	color: #1F2937;
-	min-width: 60px;
 }
 
 /**************/
 /*Quote Styles*/
 /**************/
-
+.quote {
+	background-color: #E5E7EB;
+}
+.quote p.saying {
+	text-align: justify;
+	padding: 1rem 2.5rem .5rem;
+	color: #1F2937;
+	font-size: 1.15rem;
+	font-style: italic;
+	font-weight: lighter;
+}
+.quote p.sayer {
+	color: #1F2937;
+	font-size: 1rem;
+	text-align: right;
+	padding: .5rem 2.5rem 1rem;
+}
 
 /***************/
 /*C.T.A. Styles*/
 /***************/
+.call-to-action {
+	margin: 2rem 2.5rem;
+	border-radius: 10px;
+	padding: 1rem;
+	background-color: #3882F6;
+	text-align: center;
+}
+.call-to-action .text {
+	color: #F9FAF8;
+}
+.call-to-action h3 {
+	font-size: 1.3rem;
+	margin-bottom: .5rem;
+}
+.call-to-action p {
+	font-size: 1.095rem;
+}
+.call-to-action .button {
+	border: .5px solid #F9FAF8;
+}
+
+/***************/
+/*footer Styles*/
+/***************/
+.footer {
+	background-color: #1F2937;
+	text-align: center;
+	padding: 1.5rem;
+}
+.footer p, a {
+	color: #E5E7EB;
+}
